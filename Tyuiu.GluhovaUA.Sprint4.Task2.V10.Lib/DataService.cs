@@ -14,7 +14,7 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task2.V10.Lib
             {
                 if (array[i] >= 1 && array[i] % 2 == 1 && array[i] <= 6)
                 {
-                    s =s* array[i];
+                    s = s * array[i];
                 }
             }
             return s;
