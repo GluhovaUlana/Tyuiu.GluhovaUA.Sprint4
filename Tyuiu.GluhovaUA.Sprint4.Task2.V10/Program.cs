@@ -30,17 +30,17 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task2.V10
             int len;
             Console.WriteLine("Введите количество элементов массива: ");
             len = Convert.ToInt32(Console.ReadLine());
-            int[] numsarray = new int[len];
+            int[] array = new int[len];
             for (int i = 0; i <= len - 1; i++)
             {
                
-                numsarray[i] = rnd.Next(1,6);
+                array[i] = rnd.Next(1,6);
             }
             Console.WriteLine();
             Console.WriteLine("Массив: ");
             for (int i = 0; i <= len - 1; i++)
             {
-                Console.WriteLine(numsarray[i] + "\t");
+                Console.WriteLine(array[i] + "\t");
 
             }
             Console.WriteLine();
@@ -48,7 +48,7 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task2.V10
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            int res = ds.Calculate(numsarray);
+            int res = ds.Calculate(array);
             Console.WriteLine("Сумма нечётных элементов массива в диапозоне от 1 до 6: "+res);
             Console.ReadKey();
         }
