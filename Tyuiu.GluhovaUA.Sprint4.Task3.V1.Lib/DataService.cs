@@ -12,12 +12,12 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task3.V1.Lib
             int rows = array.GetUpperBound(0) + 1;
             int columns = array.Length / rows;
             int sum = 0;
-            int l = rows - 1;
-            for (int j=0; j<rows; j++)
+            int l = columns - 1;
+            for (int i=0; i<rows; i++)
             {
-                if (array[l, j] > 0)
+                if (array[i, l] > 0)
                 {
-                    sum += array[l, j];
+                    sum += array[i, l];
                 }
             }
             return sum;

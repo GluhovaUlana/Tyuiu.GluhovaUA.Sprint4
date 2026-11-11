@@ -17,7 +17,7 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task3.V1.Test
                                           { 9, 9, 7, 5, 6 } };
 
             int res = ds.Calculate(array);
-            int wait = 36;
+            int wait = 21;
             Assert.AreEqual(wait,res);
         }
     }
