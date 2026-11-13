@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint4;
-
 namespace Tyuiu.Sprint4.Task7.V16.Lib
 {
     public class DataService : ISprint4Task7V16
