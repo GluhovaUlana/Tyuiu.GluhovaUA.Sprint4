@@ -1,7 +1,7 @@
 ﻿
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.Sprint4.Task7.V16.Lib;
+using Tyuiu.GluhovaUA.Sprint4.Task7.V16.Lib;
 namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16
 {
     class Program
