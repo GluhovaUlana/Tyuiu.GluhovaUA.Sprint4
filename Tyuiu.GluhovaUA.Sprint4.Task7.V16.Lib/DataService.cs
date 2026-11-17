@@ -10,6 +10,8 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16.Lib
         public int Calculate(int n, int m, string value)
         {
             int[,] mtrx = new int[n, m];
+
+
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)

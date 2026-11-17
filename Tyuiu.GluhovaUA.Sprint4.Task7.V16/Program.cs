@@ -31,13 +31,12 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16
 
             int index = 0;
 
-            for (int i = 0; i < n; i++) 
+            for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < m; j++) 
+                for (int j = 0; j < m; j++)
                 {
-                    
-                    Console.Write($"{value[index]}\t");
-                    index++;
+
+                    Console.Write($"{value[index]}");
                 }
                 Console.WriteLine();
             }
