@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using System.Text;
 using System.Threading.Tasks;
 using Tyuiu.GluhovaUA.Sprint4.Task7.V16.Lib;
@@ -8,7 +8,7 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16
     {
         static void Main(string[] args)
         {
-            int n = 3;
+            int n = 5;
             int m = 3;
             int[,] mtrx = new int[n, m];
             string value = "382976421897948";
@@ -31,12 +31,13 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16
 
             int index = 0;
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) 
             {
-                for (int j = 0; j < m; j++)
+                for (int j = 0; j < m; j++) 
                 {
-
-                    Console.Write($"{value[index]}");
+                    
+                    Console.Write($"{value[index]}\t");
+                    index++;
                 }
                 Console.WriteLine();
             }
@@ -45,10 +46,9 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Количество элементов, длина которых = 5:  ");
-            int res = ds.Calculate(n,m,value);
+            int res = ds.Calculate(n, m, value);
             Console.WriteLine(res);
             Console.ReadKey();
         }
     }
 }
- 

@@ -10,14 +10,11 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16.Lib
         public int Calculate(int n, int m, string value)
         {
             int[,] mtrx = new int[n, m];
-
-            int index = 0;
-
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
                 {
-                    
+
                     mtrx[i, j] = int.Parse(value.Substring(i * m + j, 1));
                 }
             }
@@ -27,9 +24,9 @@ namespace Tyuiu.GluhovaUA.Sprint4.Task7.V16.Lib
             {
                 for (int j = 0; j < m; j++)
                 {
-                    if (mtrx[i, j]%2 == 0)
+                    if (mtrx[i, j] % 2 == 0)
                     {
-                        s*= mtrx[i, j];
+                        s *= mtrx[i, j];
                     }
                 }
             }
